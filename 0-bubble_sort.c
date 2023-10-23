@@ -21,9 +21,6 @@ void swap (int *b , int *c)
 int main (void)
 {
 
-	int arr[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
-	size_t size = sizeof(arr)/sizeof(arr[0]);
-
 	bubble_sort(arr , size );
 }
 void bubble_sort(int *array , size_t size){
