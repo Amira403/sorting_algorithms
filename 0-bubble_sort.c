@@ -18,20 +18,14 @@ void swap (int *b , int *c)
  *
  * Return: Always 0
  */
-int main (void){
+int main (void)
+{
 
 	int arr[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
-	for ( int w = 0 ; w < 10 ; w++){
-
-	printf ("%d" ,arr[w])
-	if (w != 9){
-	 printf(", ");
-	}
-	}
-	printf("\n\n");
 	size_t size = sizeof(arr)/sizeof(arr[0]);
+
 	bubble_sort(arr , size );
-	}
+}
 void bubble_sort(int *array , size_t size){
 
 
@@ -52,13 +46,4 @@ void bubble_sort(int *array , size_t size){
 	}
 	}
 	}
-	printf("\n");
-	for ( int i = 0; i < size  ; i++ ){
-	if (i > 0 ){
-	printf(", ");
-	}
-	printf ("%d" , array[i]);
-	}
-	printf("\n");
-	return (0);
 }
